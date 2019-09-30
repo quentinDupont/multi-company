@@ -4,7 +4,7 @@
 
 {
     'name': 'Company Categories',
-    'version': '12.0.1.0.0',
+    'version': '13.0.1.0.0',
     'category': 'Tools',
     'author': 'GRAP, Odoo Community Association (OCA)',
     'website': 'https://github.com/OCA/multi-company',

@@ -6,12 +6,12 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 -->
 <odoo>
 
-
     <record id="view_res_company_category_tree" model="ir.ui.view">
+        <field name="name">res.company.category.tree</field>
         <field name="model">res.company.category</field>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree colors="blue: type == 'view'">
+            <tree string="Companies categories" decoration-info="type == 'view'">
                 <field name="complete_name" />
                 <field name="company_qty" />
                 <field name="type" invisible="1"/>
@@ -21,6 +21,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
     <record id="view_res_company_category_form" model="ir.ui.view">
+        <field name="name">res.company.category.form</field>
         <field name="model">res.company.category</field>
         <field name="type">form</field>
         <field name="arch" type="xml">
@@ -47,7 +48,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
     <record id="action_company_category" model="ir.actions.act_window">
         <field name="name">Company Categories</field>
         <field name="res_model">res.company.category</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
 
